@@ -1,16 +1,43 @@
-# React + Vite
+# 🍽️ Günlük Kalori Takibi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React ile geliştirilmiş, kullanıcının günlük yemeklerini ve kalorilerini takip edebildiği basit bir web uygulaması.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ➕ **Ekleme**: Yemek adı, kalori miktarı ve öğün (kahvaltı/öğle/akşam/ara öğün) bilgisiyle yeni kayıt ekleme
+- 📋 **Listeleme**: Eklenen tüm yemekleri ve toplam günlük kaloriyi görüntüleme
+- ✏️ **Güncelleme**: Mevcut bir kaydı düzenleme
+- 🗑️ **Silme**: İstenmeyen bir kaydı listeden kaldırma
+- 💾 **LocalStorage**: Veriler tarayıcıda saklanır, sayfa yenilendiğinde kaybolmaz
 
-## React Compiler
+## Kullanılan Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **ReactJS** (Vite ile kurulmuş)
+- **Pure CSS**
+- **LocalStorage API**
 
-## Expanding the ESLint configuration
+## Proje Yapısı
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├── components/
+│   ├── TodoForm.jsx   (MealForm - yemek ekleme formu)
+│   ├── TodoList.jsx   (MealList - yemek listesi)
+│   └── TodoItem.jsx   (MealItem - tekil yemek kartı)
+├── pages/
+│   └── HomePage.jsx
+├── interfaces/
+│   └── todo.js        (createMeal fonksiyonu)
+├── App.jsx
+└── App.css
+
+## Kurulum ve Çalıştırma
+npm install
+
+npm run dev
+## Canlı Demo
+
+https://lucky-starlight-21338c.netlify.app/
+
+## Geliştirici
+
+Beren Yavuz

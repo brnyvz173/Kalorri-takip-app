@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3eafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.home-page {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #333;
+  font-size: 26px;
+}
+
+.total-calories {
+  text-align: center;
+  background-color: #fce4ec;
+  color: #ad1457;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.total-calories strong {
+  font-size: 22px;
+}
+
+.meal-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.meal-form input {
+  flex: 1;
+  min-width: 100px;
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.meal-form input:focus {
+  border-color: #ab47bc;
+}
+
+.meal-form select {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+}
+
+.meal-form button {
+  padding: 10px 20px;
+  background-color: #ab47bc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.meal-form button:hover {
+  background-color: #8e24aa;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fdf6fb;
+  transition: background 0.2s;
+  flex-wrap: wrap;
+}
+
+.meal-item:hover {
+  background: #fce4ec;
+}
+
+.meal-info {
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+}
+
+.meal-type {
+  color: #888;
+  font-size: 13px;
+}
+
+.meal-item input,
+.meal-item select {
+  flex: 1;
+  min-width: 80px;
+  padding: 6px 10px;
+  border: 2px solid #ab47bc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.meal-item button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.meal-item button:first-of-type {
+  background-color: #ec407a;
+  color: white;
+}
+
+.meal-item button:first-of-type:hover {
+  background-color: #d81b60;
+}
+
+.meal-item button:last-of-type {
+  background-color: #ab47bc;
+  color: white;
+}
+
+.meal-item button:last-of-type:hover {
+  background-color: #8e24aa;
+}
+  
